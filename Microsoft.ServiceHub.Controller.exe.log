@@ -1,0 +1,15 @@
+1,"fusion","GAC",0
+1,"WinRT","NotApp",1
+3,"System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System\f2fbfb8c5e5ca3d878cda8322aa09c62\System.ni.dll",0
+3,"System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System.Core\50e467896408e5712e17a1a135f5529a\System.Core.ni.dll",0
+3,"System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System.Configuration\865d52c0991b67808a106c3b5601bb33\System.Configuration.ni.dll",0
+3,"System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System.Xml\164cbde40352a6ecd3dec0af43a53fd0\System.Xml.ni.dll",0
+3,"System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System.Runteb92aa12#\3f4bd85b05c17e6258072a05ecdbacb3\System.Runtime.Serialization.ni.dll",0
+3,"SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\SMDiagnostics\01226a925c13e2000ebf59f5e8e1873d\SMDiagnostics.ni.dll",0
+3,"System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System.Servd1dec626#\9c7954147adf2ec3a0a863537f72ef74\System.ServiceModel.Internals.ni.dll",0
+3,"netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\netstandard\07b9299ed96f8b30b81ca2f91effa743\netstandard.ni.dll",0
+3,"System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System.Numerics\ee2b6bd31331ebfeb2652dda601dd0e2\System.Numerics.ni.dll",0
+3,"System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System.Data\064e0ecafb415391138ca19c7de46d3d\System.Data.ni.dll",0
+3,"System.ValueTuple, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System.ValueTuple\50c7d4557db5ef0b795aaac29a0f634e\System.ValueTuple.ni.dll",0
+2,"System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",0
+3,"System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System.Xml.Linq\f5ee7462975ac8e98eca1605923f7a06\System.Xml.Linq.ni.dll",0
