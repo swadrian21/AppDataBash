@@ -1,0 +1,31 @@
+
+    <!-- 4.0 task has some new parameters that we want to make use of if we're targeting 4.0 -->
+    <GenerateResource
+        Sources="@(EmbeddedResource)"
+        UseSourcePath="$(UseSourcePath)"
+        References="@(ReferencePathWithRefAssemblies)"
+        UsePreserializedResources="$(GenerateResourceUsePreserializedResources)"
+        AdditionalInputs="$(MSBuildAllProjects)"
+        NeverLockTypeAssemblies="$(GenerateResourceNeverLockTypeAssemblies)"
+        StateFile="$(IntermediateOutputPath)$(MSBuildProjectFile).GenerateResource.cache"
+        StronglyTypedClassName="%(EmbeddedResource.StronglyTypedClassName)"
+        StronglyTypedFileName="%(EmbeddedResource.StronglyTypedFileName)"
+        StronglyTypedLanguage="%(EmbeddedResource.StronglyTypedLanguage)"
+        StronglyTypedNamespace="%(EmbeddedResource.StronglyTypedNamespace)"
+        StronglyTypedManifestPrefix="%(EmbeddedResource.StronglyTypedManifestPrefix)"
+        PublicClass="%(EmbeddedResource.PublicClass)"
+        OutputResources="@(EmbeddedResource->'$(IntermediateOutputPath)%(ManifestResourceName).resources')"
+        Condition="'%(EmbeddedResource.Type)' == 'Resx' and '%(EmbeddedResource.GenerateResource)' != 'false' and '$(GenerateResourceMSBuildRuntime)' != 'CLR2'"
+        SdkToolsPath="$(ResgenToolPath)"
+        ExecuteAsTool="$(ResGenExecuteAsTool)"
+        EnvironmentVariables="$(ResGenEnvironment)"
+        MSBuildRuntime="$(GenerateResourceMSBuildRuntime)"
+        MSBuildArchitecture="$(GenerateResourceMSBuildArchitecture)">
+
+      <Output TaskParameter="FilesWritten" ItemName="FileWrites"/>
+      <Output TaskParameter="StronglyTypedFileName" ItemName="Compile"/>
+
+      <!-- Gather Sources as an output since it will contain OutputResource metadata indicating the final output resource that it was compiled into -->
+      <Output TaskParameter="Sources" ItemName="_Temporary" />
+
+    </GenerateResource>
