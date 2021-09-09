@@ -1,0 +1,31 @@
+---------------------------------------
+[    *** Error Stack Dump BEGIN ***   ]
+---------------------------------------
+...Stack Protected Flag:...............[1].
+...Stack Expandable Flag:..............[1].
+...Stack Size Limited Flag:............[1].
+...Stack Size Limit Size:..............[256].
+...Stack Internal Error Flag:..........[0].
+...Stack Max Entries:..................[16].
+...Stack Entries Count:................[1].
+...Stack Entries Address:..............[000001E5F73BAC50].
+---------------------------------------
+......ERROR ENTRY: [0]
+---------------------------------------
+.........Reported Inline:..............[0].
+.........Out Of Cycle Flag:............[1].
+.........Thread ID:....................[15316].
+.........Last System Error Code:.......[0x0].
+.........Error Path:...................[APPLICATION PATH].
+.........Error Severity:...............[RECOVERABLE].
+.........Untranslated Error Code:......[157].
+.........Error Code:...................[157: ERROR_APPLICATION_SIO_MODE_REQUIREMENTS_NOT_MET].
+.........Error Sample:.................[0].
+.........Error Elapsed Time (in ms):...[0].
+.........Error Time:...................[Tue Sep  7 13:50:24 2021].
+.........Error File:...................[(...)\driver.c].
+.........Error Line:...................[26180].
+---------------------------------------
+[     *** Error Stack Dump END ***    ]
+---------------------------------------
+"C:\Program Files\Intel\SUR\QUEENCREEK\x64\esrv.exe" "--start" "--auto_register_port" "--output_folder" "%LOCAL_APP_DATA%\Intel\SUR\QUEENCREEK\collected_data" "--depend_on_key" "SOFTWARE\Intel\SUR\ICIP_RUN" "--depend_on_folder" "%LOCAL_APP_DATA%\Intel\SUR\QUEENCREEK\intermediate_data" "--depend_on_folder_size_less_than" "262144000" "--depend_on_folder_files_count_less_than" "300" "--depend_on_folder_depth_less_than" "20" "--depend_on_folder_scan_time_less_than" "40000" "--depend_check_period" "3600000" "--single_instance_only" "--address" "127.0.0.1" "--port" "49351" "--do_not_generate_dump_files" "--time_in_ms" "--pause" "5000" "--watchdog" "5" "--watchdog_cpu_usage_limit" "50" "--end_on_error" "--kernel_priority_boost" "--shutdown_priority_boost" "--library" "C:\Program Files\Intel\SUR\QUEENCREEK\x64\intel_modeler.dll" "--no_pl" "--device_options" " time=no generate_key_file=no  performance=no in_cycle_performance=no output=u output_folder='%LOCAL_APP_DATA%\Intel\SUR\QUEENCREEK\intermediate_data' upload_folder='%LOCAL_APP_DATA%\Intel\SUR\QUEENCREEK\collected_data' lock_xls=yes deferred_logger_stop=yes il='C:\Program Files\Intel\SUR\QUEENCREEK\x64\intel_user_waiting_input.dll' il='C:\Program Files\Intel\SUR\QUEENCREEK\x64\intel_events_input.dll' il='C:\Program Files\Intel\SUR\QUEENCREEK\x64\intel_system_power_state_input.dll','service=no' il='C:\Program Files\Intel\SUR\QUEENCREEK\x64\intel_foreground_window_input.dll','utf8_encoding=yes rdctl_pid=yes rdctl_address=127.0.0.1 rdctl_port=49350 clock=500 log_all_inputs=yes drive_desktop_mapping=yes drive_desktop_mapping_on_all_clicks=focused use_mouse=yes' il='C:\Program Files\Intel\SUR\QUEENCREEK\x64\intel_heartbeat_input.dll','service=no' il='C:\Program Files\Intel\SUR\QUEENCREEK\x64\intel_desktop_mapper_input.dll','foreground_window_driven=yes clock=no always_get_exe_name_from_pid=yes map_occulted_windows=no detect_dynamic_monitors=yes' il='C:\Program Files\Intel\SUR\QUEENCREEK\x64\intel_audio_input.dll','display_devs_only=yes' ll='C:\Program Files\Intel\SUR\QUEENCREEK\x64\sql_logger.dll','db_differential_elaspsed_time=yes db_wal=yes db_wal_autocheckpoint=0 db_cache=yes db_cache_size=auto db_max_page_count=300000 db_synchronous=off db_journal_mode=off db_locking_mode=exclusive delayed_dctl=summarize dctl_process_delay=5000' " 
