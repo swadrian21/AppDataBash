@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+
+<html id="html" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head><meta charset="UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><link id="css_Office" rel="stylesheet" type="text/css" href="../content/Office.en-US.css" /><link id="css_Translator" rel="stylesheet" type="text/css" href="../content/Translator.en-US.css" /><link id="css_Main" rel="stylesheet" type="text/css" href="../content/Main.en-US.css" /><link id="css_HighContrast" rel="stylesheet" type="text/css" href="../Content/HighContrast.css" />
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/3.5/MicrosoftAjax.js"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!--   NOTICE: This script referenced here is Microsoft telemetry service.   -->
+    <script src="//appsforoffice.microsoft.com/telemetry/lib/1.0/hosted/appstelemetry.js"></script> 
+
+    <script src="../Scripts/shared.js"></script>
+    <script src="../Scripts/localstorage.js"></script>
+    <script src="../Scripts/dom.js"></script>
+    <script src="../Scripts/translator.js"></script>
+<title>
+	Translator
+</title></head>
+<body>
+    <form method="post" action="./Translate.aspx?language=en-US&amp;et=PAByACAAdgA9ACIAMQAiAD4APAB0ACAAYQBpAGQAPQAiAFcAQQAxADAANAAxADIANAAzADcAMgAiACAAcABpAGQAPQAiADIANgBhAGEAYwBjADAAZgAtAGIANgAxADMALQA0ADMAYwA5AC0AOQBlADkAYQAtAGEAYgA1ADAAYQA0ADIANQA1AGYAZgA5ACIAIABjAGkAZAA9ACIAQwBGADEARQAzAEQAOABEADEAOAA1ADcARAA3AEIAMQAiACAAdABzAD0AIgAwACIAIABzAGwAPQAiAHQAcgB1AGUAIgAgAGUAdAA9ACIARgByAGUAZQAiACAAYQBkAD0AIgAyADAAMgAxAC0AMAA5AC0AMQA1AFQAMQA0ADoAMQA5ADoAMQA5AFoAIgAgAHMAZAA9ACIAMgAwADIAMQAtADAAOQAtADIAMQAiACAAdABlAD0AIgAyADAAMgAyAC0AMAA5AC0AMgAxAFQAMQAyADoAMQA0ADoANAA4AFoAIgAgAHMAcwA9ACIAMAAiACAALwA%2bADwAZAA%2bAEsAOQB0AEgAagBTAG8AVwBtAGcAbgBSAHMAbgBkAEYAdQBQACsAZwBXADcATABuAC8AYwBZAGMASwBPAHIAeQBtAHMAWQB2AHoATQBRAGEAeABvAFEAPQA8AC8AZAA%2bADwALwByAD4A&amp;_host_Info=Word%24Win32%2416.01%24en-US%24%24%24%2416" id="AccessForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTc3MjE3NjYyMw9kFgICAQ8WAh4EbGFuZwUCZW4WEgIBD2QWBgICDxYCHgRocmVmBRsuLi9jb250ZW50L09mZmljZS5lbi1VUy5jc3NkAgMPFgIfAQUfLi4vY29udGVudC9UcmFuc2xhdG9yLmVuLVVTLmNzc2QCBA8WAh8BBRkuLi9jb250ZW50L01haW4uZW4tVVMuY3NzZAIFD2QWBAIBDxYCHglpbm5lcmh0bWwFClRyYW5zbGF0b3JkAgMPFgIfAgUqVHJhbnNsYXRpb25zIGJ5IE1pY3Jvc29mdCYjMTc0OyBUcmFuc2xhdG9yZAIHDxAWAh4FdGl0bGUFDUZyb20gbGFuZ3VhZ2UPFllmAgECAgIDAgQCBQIGAgcCCAIJAgoCCwIMAg0CDgIPAhACEQISAhMCFAIVAhYCFwIYAhkCGgIbAhwCHQIeAh8CIAIhAiICIwIkAiUCJgInAigCKQIqAisCLAItAi4CLwIwAjECMgIzAjQCNQI2AjcCOAI5AjoCOwI8Aj0CPgI/AkACQQJCAkMCRAJFAkYCRwJIAkkCSgJLAkwCTQJOAk8CUAJRAlICUwJUAlUCVgJXAlgWWRAFC0F1dG8tRGV0ZWN0BQRhdXRvZxAFCUFmcmlrYWFucwUCYWZnEAUIQWxiYW5pYW4FAnNxZxAFB0FtaGFyaWMFAmFtZxAFBkFyYWJpYwUCYXJnEAUIQXJtZW5pYW4FAmh5ZxAFCEFzc2FtZXNlBQJhc2cQBQtBemVyYmFpamFuaQUCYXpnEAUGQmFuZ2xhBQJibmcQBQdCb3NuaWFuBQdicy1MYXRuZxAFCUJ1bGdhcmlhbgUCYmdnEAURTXlhbm1hciAoQnVybWVzZSkFAm15ZxAFB0NhdGFsYW4FAmNhZxAFEUt1cmRpc2ggKENlbnRyYWwpBQJrdWcQBRJDaGluZXNlIFNpbXBsaWZpZWQFBnpoLUNIU2cQBRNDaGluZXNlIFRyYWRpdGlvbmFsBQZ6aC1DSFRnEAUXQ2FudG9uZXNlIChUcmFkaXRpb25hbCkFA3l1ZWcQBQhDcm9hdGlhbgUCaHJnEAUFQ3plY2gFAmNzZxAFBkRhbmlzaAUCZGFnEAUERGFyaQUDcHJzZxAFBUR1dGNoBQJubGcQBQdFbmdsaXNoBQJlbmcQBQhFc3RvbmlhbgUCZXRnEAUGRmlqaWFuBQJmamcQBQhGaWxpcGlubwUDZmlsZxAFB0Zpbm5pc2gFAmZpZxAFBkZyZW5jaAUCZnJnEAUPRnJlbmNoIChDYW5hZGEpBQVmci1DQWcQBQZHZXJtYW4FAmRlZxAFBUdyZWVrBQJlbGcQBQhHdWphcmF0aQUCZ3VnEAUOSGFpdGlhbiBDcmVvbGUFAmh0ZxAFBkhlYnJldwUCaGVnEAUFSGluZGkFAmhpZxAFCUhtb25nIERhdwUDbXd3ZxAFCUh1bmdhcmlhbgUCaHVnEAUJSWNlbGFuZGljBQJpc2cQBQpJbmRvbmVzaWFuBQJpZGcQBQlJbnVrdGl0dXQFB2l1LUNhbnNnEAUFSXJpc2gFAmdhZxAFB0l0YWxpYW4FAml0ZxAFCEphcGFuZXNlBQJqYWcQBQdLYW5uYWRhBQJrbmcQBQZLYXpha2gFAmtrZxAFBUtobWVyBQJrbWcQBQdTd2FoaWxpBQJzd2cQBQZLb3JlYW4FAmtvZxAFEkt1cmRpc2ggKE5vcnRoZXJuKQUDa21yZxAFA0xhbwUCbG9nEAUHTGF0dmlhbgUCbHZnEAUKTGl0aHVhbmlhbgUCbHRnEAUITWFsYWdhc3kFAm1nZxAFBU1hbGF5BQJtc2cQBQlNYWxheWFsYW0FAm1sZxAFB01hbHRlc2UFAm10ZxAFBk3EgW9yaQUCbWlnEAUHTWFyYXRoaQUCbXJnEAUMWXVjYXRlYyBNYXlhBQN5dWFnEAUGTmVwYWxpBQJuZWcQBRFOb3J3ZWdpYW4gQm9rbcOlbAUCbm9nEAUET2RpYQUCb3JnEAUQUXVlcsOpdGFybyBPdG9taQUDb3RxZxAFBlBhc2h0bwUCcHNnEAUHUGVyc2lhbgUCZmFnEAUGUG9saXNoBQJwbGcQBRNQb3J0dWd1ZXNlIChCcmF6aWwpBQJwdGcQBR5Qb3J0dWd1ZXNlIChCcmF6aWwpIChQb3J0dWdhbCkFBXB0LVBUZxAFB1B1bmphYmkFAnBhZxAFCFJvbWFuaWFuBQJyb2cQBQdSdXNzaWFuBQJydWcQBQZTYW1vYW4FAnNtZxAFElNlcmJpYW4gKEN5cmlsbGljKQUHc3ItQ3lybGcQBQ9TZXJiaWFuIChMYXRpbikFB3NyLUxhdG5nEAUGU2xvdmFrBQJza2cQBQlTbG92ZW5pYW4FAnNsZxAFB1NwYW5pc2gFAmVzZxAFB1N3ZWRpc2gFAnN2ZxAFCFRhaGl0aWFuBQJ0eWcQBQVUYW1pbAUCdGFnEAUGVGVsdWd1BQJ0ZWcQBQRUaGFpBQJ0aGcQBQhUaWdyaW55YQUCdGlnEAUGVG9uZ2FuBQJ0b2cQBQdUdXJraXNoBQJ0cmcQBQlVa3JhaW5pYW4FAnVrZxAFBFVyZHUFAnVyZxAFClZpZXRuYW1lc2UFAnZpZxAFBVdlbHNoBQJjeWdkZAIJDxAWAh8DBQtUbyBsYW5ndWFnZQ8WWWYCAQICAgMCBAIFAgYCBwIIAgkCCgILAgwCDQIOAg8CEAIRAhICEwIUAhUCFgIXAhgCGQIaAhsCHAIdAh4CHwIgAiECIgIjAiQCJQImAicCKAIpAioCKwIsAi0CLgIvAjACMQIyAjMCNAI1AjYCNwI4AjkCOgI7AjwCPQI+Aj8CQAJBAkICQwJEAkUCRgJHAkgCSQJKAksCTAJNAk4CTwJQAlECUgJTAlQCVQJWAlcCWBZZEAURU2VsZWN0IGEgTGFuZ3VhZ2UFBnNlbGVjdGcQBQlBZnJpa2FhbnMFAmFmZxAFCEFsYmFuaWFuBQJzcWcQBQdBbWhhcmljBQJhbWcQBQZBcmFiaWMFAmFyZxAFCEFybWVuaWFuBQJoeWcQBQhBc3NhbWVzZQUCYXNnEAULQXplcmJhaWphbmkFAmF6ZxAFBkJhbmdsYQUCYm5nEAUHQm9zbmlhbgUHYnMtTGF0bmcQBQlCdWxnYXJpYW4FAmJnZxAFEU15YW5tYXIgKEJ1cm1lc2UpBQJteWcQBQdDYXRhbGFuBQJjYWcQBRFLdXJkaXNoIChDZW50cmFsKQUCa3VnEAUSQ2hpbmVzZSBTaW1wbGlmaWVkBQZ6aC1DSFNnEAUTQ2hpbmVzZSBUcmFkaXRpb25hbAUGemgtQ0hUZxAFF0NhbnRvbmVzZSAoVHJhZGl0aW9uYWwpBQN5dWVnEAUIQ3JvYXRpYW4FAmhyZxAFBUN6ZWNoBQJjc2cQBQZEYW5pc2gFAmRhZxAFBERhcmkFA3Byc2cQBQVEdXRjaAUCbmxnEAUHRW5nbGlzaAUCZW5nEAUIRXN0b25pYW4FAmV0ZxAFBkZpamlhbgUCZmpnEAUIRmlsaXBpbm8FA2ZpbGcQBQdGaW5uaXNoBQJmaWcQBQZGcmVuY2gFAmZyZxAFD0ZyZW5jaCAoQ2FuYWRhKQUFZnItQ0FnEAUGR2VybWFuBQJkZWcQBQVHcmVlawUCZWxnEAUIR3VqYXJhdGkFAmd1ZxAFDkhhaXRpYW4gQ3Jlb2xlBQJodGcQBQZIZWJyZXcFAmhlZxAFBUhpbmRpBQJoaWcQBQlIbW9uZyBEYXcFA213d2cQBQlIdW5nYXJpYW4FAmh1ZxAFCUljZWxhbmRpYwUCaXNnEAUKSW5kb25lc2lhbgUCaWRnEAUJSW51a3RpdHV0BQdpdS1DYW5zZxAFBUlyaXNoBQJnYWcQBQdJdGFsaWFuBQJpdGcQBQhKYXBhbmVzZQUCamFnEAUHS2FubmFkYQUCa25nEAUGS2F6YWtoBQJra2cQBQVLaG1lcgUCa21nEAUHU3dhaGlsaQUCc3dnEAUGS29yZWFuBQJrb2cQBRJLdXJkaXNoIChOb3J0aGVybikFA2ttcmcQBQNMYW8FAmxvZxAFB0xhdHZpYW4FAmx2ZxAFCkxpdGh1YW5pYW4FAmx0ZxAFCE1hbGFnYXN5BQJtZ2cQBQVNYWxheQUCbXNnEAUJTWFsYXlhbGFtBQJtbGcQBQdNYWx0ZXNlBQJtdGcQBQZNxIFvcmkFAm1pZxAFB01hcmF0aGkFAm1yZxAFDFl1Y2F0ZWMgTWF5YQUDeXVhZxAFBk5lcGFsaQUCbmVnEAURTm9yd2VnaWFuIEJva23DpWwFAm5vZxAFBE9kaWEFAm9yZxAFEFF1ZXLDqXRhcm8gT3RvbWkFA290cWcQBQZQYXNodG8FAnBzZxAFB1BlcnNpYW4FAmZhZxAFBlBvbGlzaAUCcGxnEAUTUG9ydHVndWVzZSAoQnJhemlsKQUCcHRnEAUeUG9ydHVndWVzZSAoQnJhemlsKSAoUG9ydHVnYWwpBQVwdC1QVGcQBQdQdW5qYWJpBQJwYWcQBQhSb21hbmlhbgUCcm9nEAUHUnVzc2lhbgUCcnVnEAUGU2Ftb2FuBQJzbWcQBRJTZXJiaWFuIChDeXJpbGxpYykFB3NyLUN5cmxnEAUPU2VyYmlhbiAoTGF0aW4pBQdzci1MYXRuZxAFBlNsb3ZhawUCc2tnEAUJU2xvdmVuaWFuBQJzbGcQBQdTcGFuaXNoBQJlc2cQBQdTd2VkaXNoBQJzdmcQBQhUYWhpdGlhbgUCdHlnEAUFVGFtaWwFAnRhZxAFBlRlbHVndQUCdGVnEAUEVGhhaQUCdGhnEAUIVGlncmlueWEFAnRpZxAFBlRvbmdhbgUCdG9nEAUHVHVya2lzaAUCdHJnEAUJVWtyYWluaWFuBQJ1a2cQBQRVcmR1BQJ1cmcQBQpWaWV0bmFtZXNlBQJ2aWcQBQVXZWxzaAUCY3lnZGQCCw8WAh8DBQRIZWxwFgICAQ8WAh4DYWx0BQRIZWxwZAINDxYCHwMFFFRyYW5zbGF0aW9uIFNldHRpbmdzFgICAQ8WAh8EBRRUcmFuc2xhdGlvbiBTZXR0aW5nc2QCDw8WAh8CBXU8cD5TZWxlY3QgbGFuZ3VhZ2VzIGFib3ZlLjwvcD48cD5UaGVuLCBjaG9vc2UgdGhlIHdvcmRzIG9yIHNlbnRlbmNlcyBpbiB0aGUgZG9jdW1lbnQgdGhhdCB5b3UnZCBsaWtlIHRvIHRyYW5zbGF0ZTwvcD5kAhEPFgIfBAUKVHJhbnNsYXRvcmQCEg8WAh8CBSpUcmFuc2xhdGlvbnMgYnkgTWljcm9zb2Z0JiMxNzQ7IFRyYW5zbGF0b3JkZEOXvSiUTQg3DmlaOp/jFlJGx84K" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['AccessForm'];
+if (!theForm) {
+    theForm = document.AccessForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/translatorapp/WebResource.axd?d=Ng2DT_mmkM1Y-Zev5ETUe3oxa70kadSoEFZIDPtgZo3EO_Vye0_guZ4CotN3-7QmzAuaCNzPjWpWrynNGrJcz8bDMSc1&amp;t=637639633802416775" type="text/javascript"></script>
+
+
+<script src="/translatorapp/ScriptResource.axd?d=Wj1DLhed5MMehzl4LpEctV5g3Mr4xI6UIOrhq79d0opQ_dvyVqjTXfpAMbZ12k0xeNZxXTi3Hpdq0m7rmKq2YCjIir-Mho0vyk7kNCmTlVE7AJsfSqxEH-qmaQPX_1KudyOPc-SiAzXu5729kA7j68eMRQ2PIpWsEfNznvoevQFOP2al0&amp;t=2fe674eb" type="text/javascript"></script>
+<script src="/translatorapp/ScriptResource.axd?d=uq5khwQ666NH96KWzUdu8VVpPC-EaBL5_-KJJl_VZOTCucAB9VL6dzTY7O1uQkQ_DffgXRS8xgWX_LESUkDj7FA9eXhg4ijtGxBca5f9jWGXbPDeMTZuo5QeC0o452Nq-lBst2O9CsMNw7GQjWuHLeT-pKBBbJk9TfZN4rXTDir3Warg0&amp;t=2fe674eb" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var PageMethods = function() {
+PageMethods.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+PageMethods.prototype = {
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return PageMethods._staticInstance.get_path();},
+RetrieveAppToken:function(et,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'RetrieveAppToken',false,{et:et},succeededCallback,failedCallback,userContext); },
+AddTranslationMethod:function(fromContent,toContent,fromLang,toLang,rating,category,userId,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'AddTranslationMethod',false,{fromContent:fromContent,toContent:toContent,fromLang:fromLang,toLang:toLang,rating:rating,category:category,userId:userId},succeededCallback,failedCallback,userContext); },
+CheckMultipleSentencesMethod:function(fromContent,language,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'CheckMultipleSentencesMethod',false,{fromContent:fromContent,language:language},succeededCallback,failedCallback,userContext); },
+GetLanguagesForTranslateMethod:function(clientLocale,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetLanguagesForTranslateMethod',false,{clientLocale:clientLocale},succeededCallback,failedCallback,userContext); },
+ValidateCategoryIdMethod:function(category,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'ValidateCategoryIdMethod',false,{category:category},succeededCallback,failedCallback,userContext); },
+GetTranslationsMethod:function(text,fromLang,toLang,category,userId,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'GetTranslationsMethod',false,{text:text,fromLang:fromLang,toLang:toLang,category:category,userId:userId},succeededCallback,failedCallback,userContext); },
+DetectLanguageMethod:function(text,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'DetectLanguageMethod',false,{text:text},succeededCallback,failedCallback,userContext); }}
+PageMethods.registerClass('PageMethods',Sys.Net.WebServiceProxy);
+PageMethods._staticInstance = new PageMethods();
+PageMethods.set_path = function(value) { PageMethods._staticInstance.set_path(value); }
+PageMethods.get_path = function() { return PageMethods._staticInstance.get_path(); }
+PageMethods.set_timeout = function(value) { PageMethods._staticInstance.set_timeout(value); }
+PageMethods.get_timeout = function() { return PageMethods._staticInstance.get_timeout(); }
+PageMethods.set_defaultUserContext = function(value) { PageMethods._staticInstance.set_defaultUserContext(value); }
+PageMethods.get_defaultUserContext = function() { return PageMethods._staticInstance.get_defaultUserContext(); }
+PageMethods.set_defaultSucceededCallback = function(value) { PageMethods._staticInstance.set_defaultSucceededCallback(value); }
+PageMethods.get_defaultSucceededCallback = function() { return PageMethods._staticInstance.get_defaultSucceededCallback(); }
+PageMethods.set_defaultFailedCallback = function(value) { PageMethods._staticInstance.set_defaultFailedCallback(value); }
+PageMethods.get_defaultFailedCallback = function() { return PageMethods._staticInstance.get_defaultFailedCallback(); }
+PageMethods.set_enableJsonp = function(value) { PageMethods._staticInstance.set_enableJsonp(value); }
+PageMethods.get_enableJsonp = function() { return PageMethods._staticInstance.get_enableJsonp(); }
+PageMethods.set_jsonpCallbackParameter = function(value) { PageMethods._staticInstance.set_jsonpCallbackParameter(value); }
+PageMethods.get_jsonpCallbackParameter = function() { return PageMethods._staticInstance.get_jsonpCallbackParameter(); }
+PageMethods.set_path("Translate.aspx");
+PageMethods.RetrieveAppToken= function(et,onSuccess,onFailed,userContext) {PageMethods._staticInstance.RetrieveAppToken(et,onSuccess,onFailed,userContext); }
+PageMethods.AddTranslationMethod= function(fromContent,toContent,fromLang,toLang,rating,category,userId,onSuccess,onFailed,userContext) {PageMethods._staticInstance.AddTranslationMethod(fromContent,toContent,fromLang,toLang,rating,category,userId,onSuccess,onFailed,userContext); }
+PageMethods.CheckMultipleSentencesMethod= function(fromContent,language,onSuccess,onFailed,userContext) {PageMethods._staticInstance.CheckMultipleSentencesMethod(fromContent,language,onSuccess,onFailed,userContext); }
+PageMethods.GetLanguagesForTranslateMethod= function(clientLocale,onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetLanguagesForTranslateMethod(clientLocale,onSuccess,onFailed,userContext); }
+PageMethods.ValidateCategoryIdMethod= function(category,onSuccess,onFailed,userContext) {PageMethods._staticInstance.ValidateCategoryIdMethod(category,onSuccess,onFailed,userContext); }
+PageMethods.GetTranslationsMethod= function(text,fromLang,toLang,category,userId,onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetTranslationsMethod(text,fromLang,toLang,category,userId,onSuccess,onFailed,userContext); }
+PageMethods.DetectLanguageMethod= function(text,onSuccess,onFailed,userContext) {PageMethods._staticInstance.DetectLanguageMethod(text,onSuccess,onFailed,userContext); }
+var gtc = Sys.Net.WebServiceProxy._generateTypedConstructor;
+Type.registerNamespace('TranslatorWeb.TranslationService');
+if (typeof(TranslatorWeb.TranslationService.TranslationMatch) === 'undefined') {
+TranslatorWeb.TranslationService.TranslationMatch=gtc("TranslatorWeb.TranslationService.TranslationMatch");
+TranslatorWeb.TranslationService.TranslationMatch.registerClass('TranslatorWeb.TranslationService.TranslationMatch');
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E6C6C54A" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAPGGGWPW7CBMC++PbPl/xhet93hYdIOB6Ps/2Dq0TZfLrYLuuayd8/OAbhGoRIOY7hZOuOFlqrWh/9H7TeSFt5KvPNpNA==" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'AccessForm', [], [], [], 90, '');
+//]]>
+</script>
+
+            
+        <input type="hidden" name="UserID" id="UserID" value="CfMY0reHFXNxqyHGSdvSkEsUUis7tI+jBrx/JPNeVpI=" />
+        <input type="hidden" name="ET" id="ET" value="PAByACAAdgA9ACIAMQAiAD4APAB0ACAAYQBpAGQAPQAiAFcAQQAxADAANAAxADIANAAzADcAMgAiACAAcABpAGQAPQAiADIANgBhAGEAYwBjADAAZgAtAGIANgAxADMALQA0ADMAYwA5AC0AOQBlADkAYQAtAGEAYgA1ADAAYQA0ADIANQA1AGYAZgA5ACIAIABjAGkAZAA9ACIAQwBGADEARQAzAEQAOABEADEAOAA1ADcARAA3AEIAMQAiACAAdABzAD0AIgAwACIAIABzAGwAPQAiAHQAcgB1AGUAIgAgAGUAdAA9ACIARgByAGUAZQAiACAAYQBkAD0AIgAyADAAMgAxAC0AMAA5AC0AMQA1AFQAMQA0ADoAMQA5ADoAMQA5AFoAIgAgAHMAZAA9ACIAMgAwADIAMQAtADAAOQAtADIAMQAiACAAdABlAD0AIgAyADAAMgAyAC0AMAA5AC0AMgAxAFQAMQAyADoAMQA0ADoANAA4AFoAIgAgAHMAcwA9ACIAMAAiACAALwA+ADwAZAA+AEsAOQB0AEgAagBTAG8AVwBtAGcAbgBSAHMAbgBkAEYAdQBQACsAZwBXADcATABuAC8AYwBZAGMASwBPAHIAeQBtAHMAWQB2AHoATQBRAGEAeABvAFEAPQA8AC8AZAA+ADwALwByAD4A" />
+    
+
+<script type="text/javascript">
+//<![CDATA[
+var clientStrings = {"rated_bad":"You rated this translation as Incorrect","rate_good":"This is a Good translation","turn_on_sharing":"turn on Data Sharing.","category_btnOK":"OK","rated_good":"You rated this translation as Good","rate_bad":"Report this translation as Incorrect","dont_show":"Do not show this message again","thank_you_toast_heading":"Thanks for your feedback!","settings_menu":"Settings menu","translations_description":"Click or touch a translation to Insert, Edit, or Rate it.","see_supported_langs":"See supported languages","select_a_sentence":"\u003cp\u003eSelect languages above.\u003c/p\u003e\u003cp\u003eThen, choose the words or sentences in the document that you\u0027d like to translate\u003c/p\u003e","rated_good_insert":"You rated this translation as Good, by inserting it into your document","error_category_1":"The Hub Category Identifier may be incorrectly entered.","error_category_2":"Please confirm, in the ","thank_you_toast":"Your rating just improved Microsoft® Translator. ","no":"No","to":"To: ","error_bad_language_2":"or try another selection.","error_bad_language_1":"The text you\u0027re trying to translate isn\u0027t in a language supported by Microsoft® Translator.","yes":"Yes","auto_detected":"(Auto-Detected)","error_service_failure_2":"Please check your internet connection.","error_service_failure_1":"We can\u0027t access the Microsoft® Translator online service.","confirmation":"Are you sure you want to discard your changes and Cancel Edit?","validate_cat_id":"Validating Category Identifier","thank_you_toast_turn_on":"To let Microsoft® Translator learn from the translations you used or edited, please ","cancel":"Cancel Edit","insert":"Insert","rating_unavailable":"Ratings are not available when translating more than one sentence.","error_too_much_text_2":"Try another selection.","error_too_much_text_1":"You\u0027re trying to translate too much text. Microsoft® Translator gives the best results when you select a few words or a single sentence.","from":"From: ","rate":"Rate Translation"};//]]>
+</script>
+</form>
+    <div id="SplashLogo" class="splash-logo">
+        <div class="splash-logo-container">
+            <h1 id="TranslatorTitle">Translator</h1>
+            <table class="logo-table">
+                <tr>
+                    <td><img src="../Images/translateiconwhite.png" /></td>
+                    <td id="TranslationsBy">Translations by Microsoft&#174; Translator</td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="main">
+
+        <div class="language-header" id="from-header">
+            <div class="language-select">
+                <select name="FromDropdown" id="FromDropdown" title="From language">
+	<option value="auto">Auto-Detect</option>
+	<option value="af">Afrikaans</option>
+	<option value="sq">Albanian</option>
+	<option value="am">Amharic</option>
+	<option value="ar">Arabic</option>
+	<option value="hy">Armenian</option>
+	<option value="as">Assamese</option>
+	<option value="az">Azerbaijani</option>
+	<option value="bn">Bangla</option>
+	<option value="bs-Latn">Bosnian</option>
+	<option value="bg">Bulgarian</option>
+	<option value="my">Myanmar (Burmese)</option>
+	<option value="ca">Catalan</option>
+	<option value="ku">Kurdish (Central)</option>
+	<option value="zh-CHS">Chinese Simplified</option>
+	<option value="zh-CHT">Chinese Traditional</option>
+	<option value="yue">Cantonese (Traditional)</option>
+	<option value="hr">Croatian</option>
+	<option value="cs">Czech</option>
+	<option value="da">Danish</option>
+	<option value="prs">Dari</option>
+	<option value="nl">Dutch</option>
+	<option value="en">English</option>
+	<option value="et">Estonian</option>
+	<option value="fj">Fijian</option>
+	<option value="fil">Filipino</option>
+	<option value="fi">Finnish</option>
+	<option value="fr">French</option>
+	<option value="fr-CA">French (Canada)</option>
+	<option value="de">German</option>
+	<option value="el">Greek</option>
+	<option value="gu">Gujarati</option>
+	<option value="ht">Haitian Creole</option>
+	<option value="he">Hebrew</option>
+	<option value="hi">Hindi</option>
+	<option value="mww">Hmong Daw</option>
+	<option value="hu">Hungarian</option>
+	<option value="is">Icelandic</option>
+	<option value="id">Indonesian</option>
+	<option value="iu-Cans">Inuktitut</option>
+	<option value="ga">Irish</option>
+	<option value="it">Italian</option>
+	<option value="ja">Japanese</option>
+	<option value="kn">Kannada</option>
+	<option value="kk">Kazakh</option>
+	<option value="km">Khmer</option>
+	<option value="sw">Swahili</option>
+	<option value="ko">Korean</option>
+	<option value="kmr">Kurdish (Northern)</option>
+	<option value="lo">Lao</option>
+	<option value="lv">Latvian</option>
+	<option value="lt">Lithuanian</option>
+	<option value="mg">Malagasy</option>
+	<option value="ms">Malay</option>
+	<option value="ml">Malayalam</option>
+	<option value="mt">Maltese</option>
+	<option value="mi">Māori</option>
+	<option value="mr">Marathi</option>
+	<option value="yua">Yucatec Maya</option>
+	<option value="ne">Nepali</option>
+	<option value="no">Norwegian Bokm&#229;l</option>
+	<option value="or">Odia</option>
+	<option value="otq">Quer&#233;taro Otomi</option>
+	<option value="ps">Pashto</option>
+	<option value="fa">Persian</option>
+	<option value="pl">Polish</option>
+	<option value="pt">Portuguese (Brazil)</option>
+	<option value="pt-PT">Portuguese (Brazil) (Portugal)</option>
+	<option value="pa">Punjabi</option>
+	<option value="ro">Romanian</option>
+	<option value="ru">Russian</option>
+	<option value="sm">Samoan</option>
+	<option value="sr-Cyrl">Serbian (Cyrillic)</option>
+	<option value="sr-Latn">Serbian (Latin)</option>
+	<option value="sk">Slovak</option>
+	<option value="sl">Slovenian</option>
+	<option value="es">Spanish</option>
+	<option value="sv">Swedish</option>
+	<option value="ty">Tahitian</option>
+	<option value="ta">Tamil</option>
+	<option value="te">Telugu</option>
+	<option value="th">Thai</option>
+	<option value="ti">Tigrinya</option>
+	<option value="to">Tongan</option>
+	<option value="tr">Turkish</option>
+	<option value="uk">Ukrainian</option>
+	<option value="ur">Urdu</option>
+	<option value="vi">Vietnamese</option>
+	<option value="cy">Welsh</option>
+</select>
+            </div>
+        </div>
+
+        <div id="orig-spacer">
+            <div id="orig"></div>
+        </div>
+
+        <div class="language-header" id="to-header">
+            <div class="language-select">
+                <select name="ToDropdown" id="ToDropdown" title="To language">
+	<option value="select">Select a Language</option>
+	<option value="af">Afrikaans</option>
+	<option value="sq">Albanian</option>
+	<option value="am">Amharic</option>
+	<option value="ar">Arabic</option>
+	<option value="hy">Armenian</option>
+	<option value="as">Assamese</option>
+	<option value="az">Azerbaijani</option>
+	<option value="bn">Bangla</option>
+	<option value="bs-Latn">Bosnian</option>
+	<option value="bg">Bulgarian</option>
+	<option value="my">Myanmar (Burmese)</option>
+	<option value="ca">Catalan</option>
+	<option value="ku">Kurdish (Central)</option>
+	<option value="zh-CHS">Chinese Simplified</option>
+	<option value="zh-CHT">Chinese Traditional</option>
+	<option value="yue">Cantonese (Traditional)</option>
+	<option value="hr">Croatian</option>
+	<option value="cs">Czech</option>
+	<option value="da">Danish</option>
+	<option value="prs">Dari</option>
+	<option value="nl">Dutch</option>
+	<option value="en">English</option>
+	<option value="et">Estonian</option>
+	<option value="fj">Fijian</option>
+	<option value="fil">Filipino</option>
+	<option value="fi">Finnish</option>
+	<option value="fr">French</option>
+	<option value="fr-CA">French (Canada)</option>
+	<option value="de">German</option>
+	<option value="el">Greek</option>
+	<option value="gu">Gujarati</option>
+	<option value="ht">Haitian Creole</option>
+	<option value="he">Hebrew</option>
+	<option value="hi">Hindi</option>
+	<option value="mww">Hmong Daw</option>
+	<option value="hu">Hungarian</option>
+	<option value="is">Icelandic</option>
+	<option value="id">Indonesian</option>
+	<option value="iu-Cans">Inuktitut</option>
+	<option value="ga">Irish</option>
+	<option value="it">Italian</option>
+	<option value="ja">Japanese</option>
+	<option value="kn">Kannada</option>
+	<option value="kk">Kazakh</option>
+	<option value="km">Khmer</option>
+	<option value="sw">Swahili</option>
+	<option value="ko">Korean</option>
+	<option value="kmr">Kurdish (Northern)</option>
+	<option value="lo">Lao</option>
+	<option value="lv">Latvian</option>
+	<option value="lt">Lithuanian</option>
+	<option value="mg">Malagasy</option>
+	<option value="ms">Malay</option>
+	<option value="ml">Malayalam</option>
+	<option value="mt">Maltese</option>
+	<option value="mi">Māori</option>
+	<option value="mr">Marathi</option>
+	<option value="yua">Yucatec Maya</option>
+	<option value="ne">Nepali</option>
+	<option value="no">Norwegian Bokm&#229;l</option>
+	<option value="or">Odia</option>
+	<option value="otq">Quer&#233;taro Otomi</option>
+	<option value="ps">Pashto</option>
+	<option value="fa">Persian</option>
+	<option value="pl">Polish</option>
+	<option value="pt">Portuguese (Brazil)</option>
+	<option value="pt-PT">Portuguese (Brazil) (Portugal)</option>
+	<option value="pa">Punjabi</option>
+	<option value="ro">Romanian</option>
+	<option value="ru">Russian</option>
+	<option value="sm">Samoan</option>
+	<option value="sr-Cyrl">Serbian (Cyrillic)</option>
+	<option value="sr-Latn">Serbian (Latin)</option>
+	<option value="sk">Slovak</option>
+	<option value="sl">Slovenian</option>
+	<option value="es">Spanish</option>
+	<option value="sv">Swedish</option>
+	<option value="ty">Tahitian</option>
+	<option value="ta">Tamil</option>
+	<option value="te">Telugu</option>
+	<option value="th">Thai</option>
+	<option value="ti">Tigrinya</option>
+	<option value="to">Tongan</option>
+	<option value="tr">Turkish</option>
+	<option value="uk">Ukrainian</option>
+	<option value="ur">Urdu</option>
+	<option value="vi">Vietnamese</option>
+	<option value="cy">Welsh</option>
+</select>
+            </div>
+        </div>
+        
+        <div class="background">
+            <div class="navigation">
+                <a href="Help.aspx" id="HelpLink" title="Help"><div id="help-wrapper" class="transparent-wrapperBase"><img src="../Images/16x16-transparent.png" id="HelpImage" alt="Help" /></div></a>
+                <div id="navigation-spacer"></div>
+                <a href="Settings.aspx" id="SettingsLink" title="Translation Settings"><div id="settings-wrapper" class="transparent-wrapperBase"><img src="../Images/16x16-transparent.png" id="SettingsImage" alt="Translation Settings" /></div></a>
+            </div>
+            <!--[if IE 9]>
+            <script>
+            Translator.Globals.ie9 = true;
+            $("#HelpImage").get(0).src = "../Images/help.png";
+            $("#SettingsImage").get(0).src = "../Images/settings.png";
+            </script>
+            <![endif]-->
+
+            <div id="Instructions" class="instructions"><p>Select languages above.</p><p>Then, choose the words or sentences in the document that you'd like to translate</p></div>
+
+            <div id="loading">
+                <img src="../Images/loading.gif" />
+            </div>
+
+            <div class="container" id="translation_pane">
+            </div>
+           
+
+            <div id="attribution" class="extra-margin">
+                <div class="container">
+                    <img src="../Images/msticon.png" id="AttributionImage" alt="Translator" /><span id="AttributionText">Translations by Microsoft&#174; Translator</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>

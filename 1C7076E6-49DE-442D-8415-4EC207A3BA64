@@ -1,0 +1,362 @@
+[
+  {
+    "LanguageTag": "af",
+    "LanguageName": "Afrikaans"
+  },
+  {
+    "LanguageTag": "sq",
+    "LanguageName": "Albanian"
+  },
+  {
+    "LanguageTag": "am",
+    "LanguageName": "Amharic"
+  },
+  {
+    "LanguageTag": "ar",
+    "LanguageName": "Arabic"
+  },
+  {
+    "LanguageTag": "hy",
+    "LanguageName": "Armenian"
+  },
+  {
+    "LanguageTag": "as",
+    "LanguageName": "Assamese"
+  },
+  {
+    "LanguageTag": "az",
+    "LanguageName": "Azerbaijani"
+  },
+  {
+    "LanguageTag": "bn",
+    "LanguageName": "Bangla"
+  },
+  {
+    "LanguageTag": "bs",
+    "LanguageName": "Bosnian"
+  },
+  {
+    "LanguageTag": "bg",
+    "LanguageName": "Bulgarian"
+  },
+  {
+    "LanguageTag": "yue",
+    "LanguageName": "Cantonese (Traditional)"
+  },
+  {
+    "LanguageTag": "ca",
+    "LanguageName": "Catalan"
+  },
+  {
+    "LanguageTag": "lzh",
+    "LanguageName": "Chinese (Literary)"
+  },
+  {
+    "LanguageTag": "zh-chs",
+    "LanguageName": "Chinese Simplified"
+  },
+  {
+    "LanguageTag": "zh-cht",
+    "LanguageName": "Chinese Traditional"
+  },
+  {
+    "LanguageTag": "hr",
+    "LanguageName": "Croatian"
+  },
+  {
+    "LanguageTag": "cs",
+    "LanguageName": "Czech"
+  },
+  {
+    "LanguageTag": "da",
+    "LanguageName": "Danish"
+  },
+  {
+    "LanguageTag": "prs",
+    "LanguageName": "Dari"
+  },
+  {
+    "LanguageTag": "nl",
+    "LanguageName": "Dutch"
+  },
+  {
+    "LanguageTag": "en",
+    "LanguageName": "English"
+  },
+  {
+    "LanguageTag": "et",
+    "LanguageName": "Estonian"
+  },
+  {
+    "LanguageTag": "fj",
+    "LanguageName": "Fijian"
+  },
+  {
+    "LanguageTag": "fil",
+    "LanguageName": "Filipino"
+  },
+  {
+    "LanguageTag": "fi",
+    "LanguageName": "Finnish"
+  },
+  {
+    "LanguageTag": "fr",
+    "LanguageName": "French"
+  },
+  {
+    "LanguageTag": "fr-ca",
+    "LanguageName": "French (Canada)"
+  },
+  {
+    "LanguageTag": "de",
+    "LanguageName": "German"
+  },
+  {
+    "LanguageTag": "el",
+    "LanguageName": "Greek"
+  },
+  {
+    "LanguageTag": "gu",
+    "LanguageName": "Gujarati"
+  },
+  {
+    "LanguageTag": "ht",
+    "LanguageName": "Haitian Creole"
+  },
+  {
+    "LanguageTag": "he",
+    "LanguageName": "Hebrew"
+  },
+  {
+    "LanguageTag": "hi",
+    "LanguageName": "Hindi"
+  },
+  {
+    "LanguageTag": "mww",
+    "LanguageName": "Hmong Daw"
+  },
+  {
+    "LanguageTag": "hu",
+    "LanguageName": "Hungarian"
+  },
+  {
+    "LanguageTag": "is",
+    "LanguageName": "Icelandic"
+  },
+  {
+    "LanguageTag": "id",
+    "LanguageName": "Indonesian"
+  },
+  {
+    "LanguageTag": "iu",
+    "LanguageName": "Inuktitut"
+  },
+  {
+    "LanguageTag": "ga",
+    "LanguageName": "Irish"
+  },
+  {
+    "LanguageTag": "it",
+    "LanguageName": "Italian"
+  },
+  {
+    "LanguageTag": "ja",
+    "LanguageName": "Japanese"
+  },
+  {
+    "LanguageTag": "kn",
+    "LanguageName": "Kannada"
+  },
+  {
+    "LanguageTag": "kk",
+    "LanguageName": "Kazakh"
+  },
+  {
+    "LanguageTag": "km",
+    "LanguageName": "Khmer"
+  },
+  {
+    "LanguageTag": "tlh-latn",
+    "LanguageName": "Klingon (Latin)"
+  },
+  {
+    "LanguageTag": "ko",
+    "LanguageName": "Korean"
+  },
+  {
+    "LanguageTag": "ku",
+    "LanguageName": "Kurdish (Central)"
+  },
+  {
+    "LanguageTag": "kmr",
+    "LanguageName": "Kurdish (Northern)"
+  },
+  {
+    "LanguageTag": "lo",
+    "LanguageName": "Lao"
+  },
+  {
+    "LanguageTag": "lv",
+    "LanguageName": "Latvian"
+  },
+  {
+    "LanguageTag": "lt",
+    "LanguageName": "Lithuanian"
+  },
+  {
+    "LanguageTag": "mg",
+    "LanguageName": "Malagasy"
+  },
+  {
+    "LanguageTag": "ms",
+    "LanguageName": "Malay"
+  },
+  {
+    "LanguageTag": "ml",
+    "LanguageName": "Malayalam"
+  },
+  {
+    "LanguageTag": "mt",
+    "LanguageName": "Maltese"
+  },
+  {
+    "LanguageTag": "mi",
+    "LanguageName": "Māori"
+  },
+  {
+    "LanguageTag": "mr",
+    "LanguageName": "Marathi"
+  },
+  {
+    "LanguageTag": "my",
+    "LanguageName": "Myanmar (Burmese)"
+  },
+  {
+    "LanguageTag": "ne",
+    "LanguageName": "Nepali"
+  },
+  {
+    "LanguageTag": "nb",
+    "LanguageName": "Norwegian"
+  },
+  {
+    "LanguageTag": "or",
+    "LanguageName": "Odia"
+  },
+  {
+    "LanguageTag": "ps",
+    "LanguageName": "Pashto"
+  },
+  {
+    "LanguageTag": "fa",
+    "LanguageName": "Persian"
+  },
+  {
+    "LanguageTag": "pl",
+    "LanguageName": "Polish"
+  },
+  {
+    "LanguageTag": "pt",
+    "LanguageName": "Portuguese (Brazil)"
+  },
+  {
+    "LanguageTag": "pt-pt",
+    "LanguageName": "Portuguese (Portugal)"
+  },
+  {
+    "LanguageTag": "pa",
+    "LanguageName": "Punjabi"
+  },
+  {
+    "LanguageTag": "otq",
+    "LanguageName": "Querétaro Otomi"
+  },
+  {
+    "LanguageTag": "ro",
+    "LanguageName": "Romanian"
+  },
+  {
+    "LanguageTag": "ru",
+    "LanguageName": "Russian"
+  },
+  {
+    "LanguageTag": "sm",
+    "LanguageName": "Samoan"
+  },
+  {
+    "LanguageTag": "sr-cyrl",
+    "LanguageName": "Serbian (Cyrillic)"
+  },
+  {
+    "LanguageTag": "sr-latn",
+    "LanguageName": "Serbian (Latin)"
+  },
+  {
+    "LanguageTag": "sk",
+    "LanguageName": "Slovak"
+  },
+  {
+    "LanguageTag": "sl",
+    "LanguageName": "Slovenian"
+  },
+  {
+    "LanguageTag": "es",
+    "LanguageName": "Spanish"
+  },
+  {
+    "LanguageTag": "sw",
+    "LanguageName": "Swahili"
+  },
+  {
+    "LanguageTag": "sv",
+    "LanguageName": "Swedish"
+  },
+  {
+    "LanguageTag": "ty",
+    "LanguageName": "Tahitian"
+  },
+  {
+    "LanguageTag": "ta",
+    "LanguageName": "Tamil"
+  },
+  {
+    "LanguageTag": "te",
+    "LanguageName": "Telugu"
+  },
+  {
+    "LanguageTag": "th",
+    "LanguageName": "Thai"
+  },
+  {
+    "LanguageTag": "ti",
+    "LanguageName": "Tigrinya"
+  },
+  {
+    "LanguageTag": "to",
+    "LanguageName": "Tongan"
+  },
+  {
+    "LanguageTag": "tr",
+    "LanguageName": "Turkish"
+  },
+  {
+    "LanguageTag": "uk",
+    "LanguageName": "Ukrainian"
+  },
+  {
+    "LanguageTag": "ur",
+    "LanguageName": "Urdu"
+  },
+  {
+    "LanguageTag": "vi",
+    "LanguageName": "Vietnamese"
+  },
+  {
+    "LanguageTag": "cy",
+    "LanguageName": "Welsh"
+  },
+  {
+    "LanguageTag": "yua",
+    "LanguageName": "Yucatec Maya"
+  }
+]
