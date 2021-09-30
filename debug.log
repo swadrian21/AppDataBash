@@ -1,0 +1,77 @@
+[0125/080700.518:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0125/085903.500:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0125/172000.536:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0125/200310.502:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[10040:13048:0125/200310.958:21433703:WARNING:update_check_handler_impl_win.cc(226)] [AU] Task failure count : 0
+[10040:13048:0125/200310.958:21433703:INFO:protocolimpl.cc(855)] Main update resource available: false
+[0125/200605.830:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0128/203810.404:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[13372:7560:0128/203826.730:282753640:WARNING:update_check_handler_impl_win.cc(226)] [AU] Task failure count : 0
+[13372:7560:0128/203826.730:282753640:INFO:protocolimpl.cc(855)] Main update resource available: false
+[0128/203859.172:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0128/204103.519:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0129/212405.168:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0129/212926.222:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0131/143436.551:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[10980:10984:0131/143454.131:239875:WARNING:update_check_handler_impl_win.cc(226)] [AU] Task failure count : 0
+[10980:10984:0131/143454.131:239875:INFO:protocolimpl.cc(855)] Main update resource available: false
+[0131/143713.301:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0131/174141.478:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[3460:8824:0131/174200.062:258796:WARNING:update_check_handler_impl_win.cc(226)] [AU] Task failure count : 0
+[3460:8824:0131/174200.062:258796:INFO:protocolimpl.cc(855)] Main update resource available: false
+[0131/174405.853:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0201/072836.254:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0201/073403.834:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0202/182932.614:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[5488:9120:0202/182933.348:405093:WARNING:update_check_handler_impl_win.cc(226)] [AU] Task failure count : 0
+[5488:9120:0202/182933.348:405093:INFO:protocolimpl.cc(855)] Main update resource available: false
+[0202/192420.839:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0202/192454.275:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0203/094953.358:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[5004:7252:0203/094953.936:8834671:WARNING:update_check_handler_impl_win.cc(226)] [AU] Task failure count : 0
+[5004:7252:0203/094953.936:8834671:INFO:protocolimpl.cc(855)] Main update resource available: false
+[0203/114116.709:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[10516:7276:0203/114117.271:15518015:WARNING:update_check_handler_impl_win.cc(226)] [AU] Task failure count : 0
+[10516:7276:0203/114117.271:15518015:INFO:protocolimpl.cc(855)] Main update resource available: false
+[0203/183900.475:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[8772:12712:0203/183901.631:40582375:WARNING:update_check_handler_impl_win.cc(226)] [AU] Task failure count : 0
+[8772:12712:0203/183901.631:40582375:INFO:protocolimpl.cc(855)] Main update resource available: false
+[0203/204043.749:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0203/204159.372:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0203/204407.336:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0204/080055.464:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0204/205246.034:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[1660:5228:0204/205255.679:135016421:WARNING:update_check_handler_impl_win.cc(226)] [AU] Task failure count : 0
+[1660:5228:0204/205255.679:135016421:INFO:protocolimpl.cc(855)] Main update resource available: false
+[0204/205451.158:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0205/072129.157:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0205/134726.638:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0206/070911.060:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0206/071105.994:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0206/083336.526:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[5436:9844:0206/083350.107:263475640:WARNING:update_check_handler_impl_win.cc(226)] [AU] Task failure count : 0
+[5436:9844:0206/083350.107:263475640:INFO:protocolimpl.cc(855)] Main update resource available: false
+[0206/215244.873:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0206/215535.166:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0207/074801.049:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0207/132205.552:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0207/213104.050:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0208/074229.164:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0208/190418.831:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0208/192453.431:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0209/065440.256:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0209/212756.456:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0210/063929.184:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[4520:8152:0210/063930.567:29469312:WARNING:update_check_handler_impl_win.cc(226)] [AU] Task failure count : 0
+[4520:8152:0210/063930.585:29469328:INFO:protocolimpl.cc(855)] Main update resource available: false
+[0211/072657.769:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0211/202714.626:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0211/202923.965:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0212/070626.713:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0213/072441.232:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0213/072515.133:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0213/072715.213:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[11472:14108:0213/072715.477:222036078:WARNING:update_check_handler_impl_win.cc(226)] [AU] Task failure count : 0
+[11472:14108:0213/072715.477:222036078:INFO:protocolimpl.cc(855)] Main update resource available: false
+[0214/072023.079:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
+[0215/174929.926:ERROR:ipc_thread_impl.cc(103)] Unable to create IPC as client!Pipe name used: oauc_task_pipe44b33b4075d04cd4e5fbb56aff3879ed
