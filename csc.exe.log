@@ -1,0 +1,14 @@
+1,"fusion","GAC",0
+1,"WinRT","NotApp",1
+3,"System.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System.Runtime\ad8491ac2b47cc5e9f01400aac07bbe7\System.Runtime.ni.dll",0
+3,"System.Reflection, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System.Reflection\89400af5df10216e57151e8ab6bb1db5\System.Reflection.ni.dll",0
+3,"System.IO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System.IO\b1389514c6eda518a6db0385aee8a324\System.IO.ni.dll",0
+3,"System.Threading.Tasks, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System.Thre7bb2aad0#\fa425cc4c99b8c466ea10cdb6b9fe2ad\System.Threading.Tasks.ni.dll",0
+3,"System.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System.Collections\7c2a489611ba2b4440350cb655811bde\System.Collections.ni.dll",0
+3,"System.Runtime.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System.Runt1e58aa76#\a3cb3cf75e0635abee4df62356f37da1\System.Runtime.Extensions.ni.dll",0
+3,"System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System\f2fbfb8c5e5ca3d878cda8322aa09c62\System.ni.dll",0
+3,"System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System.Core\50e467896408e5712e17a1a135f5529a\System.Core.ni.dll",0
+2,"System.Globalization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",0
+3,"System.Threading, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System.Threading\0e32d0ee73f03394cd890d0c1e577369\System.Threading.ni.dll",0
+2,"System.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",0
+3,"System.Text.Encoding, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a","C:\WINDOWS\assembly\NativeImages_v4.0.30319_64\System.Text.Encoding\9bfaaffc965e0c89de25a5882cf45206\System.Text.Encoding.ni.dll",0
